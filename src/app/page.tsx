@@ -764,7 +764,16 @@ export default function Portfolio() {
                     
                     <div>
                       <label htmlFor="message" className={`block mb-2 text-sm font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Message</label>
-                      <textarea id="message" rows="4" className={`w-full px-4 py-2 rounded-lg border ${darkMode ? 'bg-gray-700 border-gray-600 text-white' : 'bg-white border-gray-300 text-gray-900'} focus:ring-blue-500 focus:border-blue-500`}></textarea>
+                      <textarea
+  id="message"
+  rows={4}
+  className={`w-full px-4 py-2 rounded-lg border ${
+    darkMode
+      ? 'bg-gray-700 border-gray-600 text-white'
+      : 'bg-white border-gray-300 text-gray-900'
+  } focus:ring-blue-500 focus:border-blue-500`}
+/>
+
                     </div>
                     
                     <button type="submit" className={`px-6 py-3 rounded-lg text-white font-medium transition-all ${darkMode ? 'bg-blue-600 hover:bg-blue-700' : 'bg-blue-700 hover:bg-blue-800'} shadow-lg hover:shadow-blue-500/30`}>
