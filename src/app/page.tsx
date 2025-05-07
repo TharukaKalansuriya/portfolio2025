@@ -76,7 +76,7 @@ export default function Portfolio() {
   }, []);
 
   // Scroll to section
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -351,7 +351,7 @@ export default function Portfolio() {
               BSc (Hons) Computing Undergraduate
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Hi, I'm <span className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} text-gradient`}>Tharuka Kalansuriya</span>
+              Hi, I am <span className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} text-gradient`}>Tharuka Kalansuriya</span>
             </h1>
             <p className={`text-xl md:text-2xl mb-8 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
               Full-stack developer specializing in web and mobile applications with a passion for IoT and embedded systems.
@@ -588,7 +588,7 @@ export default function Portfolio() {
                   </div>
                 </div>
                 <p className={`mt-2 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                  GCE Ordinary Level: 8 'A' Passes, 1 'B' Pass
+                  GCE Ordinary Level: 8 A Passes, 1 B Pass
                 </p>
               </div>
             </div>
